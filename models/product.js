@@ -7,7 +7,7 @@ const Product = mongoose.model(
     name: {
       type: String,
       required: true,
-      minlenght: 5,
+      minlength: 5,
       maxlength: 50,
     },
     active: {
@@ -17,8 +17,8 @@ const Product = mongoose.model(
     category: {
       type: String,
       required: true,
-      minlenght: 5,
-      maxlenght: 50,
+      minlength: 5,
+      maxlength: 50,
     },
   }),
 );
