@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const products = require('./routes/products');
+const wallets = require('./routes/wallets');
 const customers = require('./routes/customers');
 const express = require('express');
 const app = express();
@@ -10,7 +10,7 @@ mongoose
   .catch((err) => console.error('Could not connect to MongoDB...'));
 
 app.use(express.json());
-app.use('/api/products', products);
+app.use('/api/wallets', wallets);
 app.use('/api/customers', customers);
 
 const port = process.env.PORT || 3000;
